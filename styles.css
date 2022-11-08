@@ -31,6 +31,17 @@ nav {
     align-items: center;
 }
 
+.header {
+    color: #000;
+    background-color: #fdcc04;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    text-underline-position: auto;
+    padding: 1rem 0rem 0rem;
+    text-align: center;
+}
+
 nav a {
     padding: 1rem 3rem;
     font-size: 1rem;
@@ -51,13 +62,14 @@ nav a:hover {
 
 .hero {
     background: #fdcc04;
+    height: 27.4rem
 }
 
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    padding: 3rem calc((100vw - 1300px) / 2);
+    height: 60vh;
+    padding: 2rem calc((100vw - 1300px) / 2) 4rem;
 }
 
 .column-left {
@@ -79,15 +91,6 @@ nav a:hover {
     text-align: center;
     align-items: center;
     font-weight: bold;
-}
-
-.column-left p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
-    align-items: center;
 }
 
 button {
@@ -116,14 +119,23 @@ button:hover {
 
 .column-right {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0rem 2rem;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
+
+}
+
+.column-right h1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 .hero-image {
